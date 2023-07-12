@@ -11,7 +11,7 @@ namespace LineComparison
             double line1 = operation1.CalculateLength();
             Operation operation2 = new Operation(2,1,4,3);
             double line2 = operation2.CalculateLength();
-
+            /*
             if(line1.Equals(line2))
             {
                 Console.WriteLine("The lines are equal");
@@ -19,6 +19,19 @@ namespace LineComparison
             else
             {
                 Console.WriteLine("The lines are not equal");
+            }
+            */
+            if(line1.CompareTo(line2) == 0)
+            {
+                Console.WriteLine("Lines are equal");
+            }
+            if(line1.CompareTo(line2) < 0)
+            {
+                Console.WriteLine("Line1 < Line2");
+            }
+            if (line1.CompareTo(line2) > 0)
+            {
+                Console.WriteLine("Line1 > Line2");
             }
         }
     }
