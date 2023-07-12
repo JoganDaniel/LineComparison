@@ -18,10 +18,11 @@ namespace LineComparison
 
         }
 
-        public void CalculateLength()
+        public double CalculateLength()
         {
             double length = Math.Sqrt(Math.Pow((x2-x1 ),2) + Math.Pow((y2-y1) ,2));
             Console.WriteLine("Length of the line : "+length);
+            return length;
         }
     }
 }
